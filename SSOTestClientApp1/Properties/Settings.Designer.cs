@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SSOBase1.Properties {
+namespace SSOTestClientApp1.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -26,10 +26,10 @@ namespace SSOBase1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=EVTUN045;Initial Catalog=SSOBaseDB;Integrated Security=True")]
-        public string SSOSSOBaseDBConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=EVTUN045;Initial Catalog=SSOSampleDB;Integrated Security=True")]
+        public string SSOSampleDBConnectionString {
             get {
-                return ((string)(this["SSOSSOBaseDBConnectionString"]));
+                return ((string)(this["SSOSampleDBConnectionString"]));
             }
         }
     }

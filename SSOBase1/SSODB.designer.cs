@@ -22,7 +22,7 @@ namespace SSOBase1
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="SSOSampleDB")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="SSOBaseDB")]
 	public partial class SSODBDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -33,7 +33,7 @@ namespace SSOBase1
     #endregion
 		
 		public SSODBDataContext() : 
-				base(global::SSOBase1.Properties.Settings.Default.SSOSampleDBConnectionString, mappingSource)
+				base(global::SSOBase1.Properties.Settings.Default.SSOSSOBaseDBConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

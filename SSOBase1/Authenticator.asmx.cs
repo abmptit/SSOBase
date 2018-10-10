@@ -13,6 +13,7 @@ namespace SSOBase1
     
     public class Authenticator : System.Web.Services.WebService
     {
+
         string _userId;
         public Authenticator(string UserId)
         {

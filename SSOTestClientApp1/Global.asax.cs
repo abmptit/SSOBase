@@ -9,10 +9,14 @@ namespace SSOTestClientApp1
 {
     public class Global : System.Web.HttpApplication
     {
-
         void Application_Start(object sender, EventArgs e)
         {
             // Code that runs on application startup
+            SSOClient1DBDataContext db = new SSOClient1DBDataContext();
+            if (!db.DatabaseExists())
+            {
+                db.CreateDatabase();
+            }
 
         }
 

@@ -9,11 +9,14 @@ namespace SSOBase1
 {
     public class Global : System.Web.HttpApplication
     {
-
         void Application_Start(object sender, EventArgs e)
         {
             // Code that runs on application startup
-
+            SSODBDataContext db = new SSODBDataContext();
+            if (!db.DatabaseExists())
+            {
+                db.CreateDatabase();
+            }
         }
 
         void Application_End(object sender, EventArgs e)
